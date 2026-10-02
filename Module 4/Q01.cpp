@@ -14,6 +14,7 @@ using namespace std;
 
 int main()
 {
+    //input
     double mealPrice; 
     int quantityOrdered;
     double serviceCharge;
@@ -37,7 +38,8 @@ int main()
     
     cout <<"Enter Number of Students: ";
     cin >> students;
-    
+
+    //process
     subtotal = (mealPrice * quantityOrdered);
     
     servicecharge = (serviceCharge)/100.0;
@@ -47,7 +49,8 @@ int main()
     finalbill = (subtotal + Servicecharge);
     
     share = (finalbill/students);
-    
+
+    //output
     cout << fixed <<setprecision(2);
     cout <<"Subtotal:₱ " <<subtotal<<endl;
     cout <<"Service Charge:₱ "<<Servicecharge<<endl;
