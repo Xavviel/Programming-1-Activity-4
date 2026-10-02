@@ -47,15 +47,12 @@ int main()
     examGrade = (exam * 0.30);
     
     weightedGrade = (quizGrade + labGrade + projectGrade + examGrade);
-    
-    roundedGrade = round(weightedGrade);
-    integerGrade = (int)(weightedGrade);
 
     //output
     cout <<fixed <<setprecision(2);
     cout <<"Weighted Grade: " <<weightedGrade<<endl;
-    cout <<"Rounded Grade: " <<roundedGrade<<endl;
-    cout <<"Cast to Int: " <<integerGrade<<endl;
+    cout <<"Rounded Grade: " <<round(weightedGrade)<<endl;
+    cout <<"Cast to Int: " <<(int)(weightedGrade)<<endl;
     
     return 0;
 }
