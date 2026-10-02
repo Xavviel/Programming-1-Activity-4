@@ -50,7 +50,7 @@ int main()
     roundedGrade = round(weightedGrade);
     integerGrade = (int)(weightedGrade);
     
-    cout <<fixed <<setprecision(2)<<weightedGrade;
+    cout <<fixed <<setprecision(2);
     cout <<"Weighted Grade: " <<weightedGrade<<endl;
     cout <<"Rounded Grade: " <<roundedGrade<<endl;
     cout <<"Cast to Int: " <<integerGrade<<endl;
