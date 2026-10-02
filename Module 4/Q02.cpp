@@ -15,6 +15,7 @@ Quiz, Lab, Project, Examination Scores
 using namespace std;
 int main()
 {
+    //input
     double quiz;
     double lab;
     double project;
@@ -27,7 +28,6 @@ int main()
     double roundedGrade;
     double integerGrade;
     
-    
     cout <<"Enter Quiz Score (In Decimal Value): ";
     cin >> quiz;
     
@@ -39,7 +39,8 @@ int main()
     
     cout <<"Enter Examination Score (In Decimal Value): ";
     cin >> exam;
-    
+
+    //process
     quizGrade = (quiz * 0.20);
     labGrade = (lab * 0.25);
     projectGrade = (project * 0.25);
@@ -49,7 +50,8 @@ int main()
     
     roundedGrade = round(weightedGrade);
     integerGrade = (int)(weightedGrade);
-    
+
+    //output
     cout <<fixed <<setprecision(2);
     cout <<"Weighted Grade: " <<weightedGrade<<endl;
     cout <<"Rounded Grade: " <<roundedGrade<<endl;
