@@ -14,6 +14,7 @@ using namespace std;
 
 int main()
 {
+    //input
     long long fileSize;
     double kilobytes;
     double megabytes;
@@ -23,12 +24,13 @@ int main()
     cout <<"Enter File Size in Bytes: ";
     cin >> fileSize;
     
-    
+    //process
     kilobytes = (fileSize / 1024);
     megabytes = (kilobytes/ 1024.0);
     gigabytes = (megabytes / 1024);
     wholeMB = megabytes;
-    
+
+    //output
     cout << fixed <<setprecision (2) << "KB: " << kilobytes << endl;
     cout << fixed <<setprecision (2) << "MB: " << megabytes << endl;
     cout << fixed <<setprecision (4) << "GB: " << gigabytes << endl;
