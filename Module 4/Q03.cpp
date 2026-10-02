@@ -21,7 +21,7 @@ int main()
     double rate;
     double toll;
     double booking;
-    double passengers;
+    int passengers;
     double distanceCharge;
     double preFee;
     double Booking;
