@@ -15,6 +15,7 @@ using namespace std;
 
 int main()
 {
+    //input
     double temp1;
     double temp2;
     double temp3;
@@ -28,10 +29,11 @@ int main()
     
     cout <<"Enter Temperature 3: ";
     cin >> temp3;
-    
+
+    //process
     average = (temp1 + temp2 + temp3)/3;
     
-    
+    //output
     cout << fixed << setprecision(3) << "Average: " << average <<endl;
     
     cout << "|T1 - T3|: " << fabs(temp1 - temp3) <<endl;
